@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --background-color: hsl(226, 43%, 10%);
+  --info-bgcolor: hsl(235, 46%, 20%);
+  --header-bgcolor: hsl(235, 45%, 61%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 1rem;
+}
+
+.card__header {
+  display: flex;
+  background-color: var(--header-bgcolor);
+  
+
+  img {
+    width: 64px;
+    height: 64px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+  }
+}
+
+.card {
+  background-color: var(--info-bgcolor);
+}
