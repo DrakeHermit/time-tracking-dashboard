@@ -3,7 +3,15 @@
 :root {
   --background-color: hsl(226, 43%, 10%);
   --info-bgcolor: hsl(235, 46%, 20%);
-  --header-bgcolor: hsl(235, 45%, 61%);
+  --header-bgcolor: #5747EA;
+  --pale-blue: hsl(236, 100%, 87%);
+  --desaturated-blue: hsl(235, 45%, 61%);
+  --soft-red: hsl(15, 100%, 70%);
+  --soft-blue: hsl(195, 74%, 62%);
+  --light-red: hsl(348, 100%, 68%);
+  --lime-green: hsl(145, 58%, 55%);
+  --violet: hsl(264, 64%, 52%);
+  --soft-orange: hsl(43, 84%, 65%);
 }
 
 * {
@@ -14,17 +22,25 @@
 
 body {
   background-color: var(--background-color);
-  min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
   padding: 5rem 1rem;
+  font-family: 'Rubik', sans-serif;
+}
+
+h2 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .card__header {
   display: flex;
   background-color: var(--header-bgcolor);
-  
+  padding: 1.9rem;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 1rem;
 
   img {
     width: 64px;
@@ -32,8 +48,98 @@ body {
     border: 2px solid #fff;
     border-radius: 50%;
   }
+
+  h1 {
+    color: #fff;
+    font-weight: 300;
+  }
+  
+  p {
+    color: var(--pale-blue);
+    font-size: 15px;
+  }
 }
 
 .card {
   background-color: var(--info-bgcolor);
+  margin-bottom: 1.5rem;
+  border-radius: 1rem;
+
+  .card__info {
+    padding: 2rem 1.5rem;
+  }
+
+  .card__illustration {
+    display: flex;
+    justify-content: right;
+    border-radius: 1rem;
+
+    &.play {
+    background-color: var(--soft-blue);
+    }
+
+    &.work {
+      background-color: var(--soft-red);
+    }
+
+    &.study {
+      background-color: var(--light-red);
+    }
+
+    &.exercise {
+      background-color: var(--lime-green);
+    }
+
+    &.social {
+      background-color: var(--violet);
+    }
+
+    &.self-care {
+      background-color: var(--soft-orange);
+    }
+  }
+
+  .title__options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+
+    button {
+      background-color: inherit;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .hours {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      font-size: 32px;
+      color: #fff;
+      font-weight: 300;
+
+      &.small {
+        font-size: 15px;
+        color: var(--pale-blue);
+      }
+    }
+  }
+}
+
+.button__group {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem;
+  border-radius: 0 0 1rem 1rem;
+
+  button {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--desaturated-blue);
+  }
 }
