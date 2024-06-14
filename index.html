@@ -19,7 +19,7 @@
   </head>
   <body>
     <main class="main__content">
-      <article class="card" id="main-card">
+      <article class="card main__card" id="main-card">
         <header class="card__header">
           <img src="/images/image-jeremy.png" alt="Profile picture" />
           <div class="account__info">
@@ -33,21 +33,20 @@
           <button>Monthly</button>
         </div>
       </article>
-      <article class="card" id="work">
-        <div class="card__illustration work">
-          <img src="/images/icon-work.svg" alt="" />
-        </div>
-        <div class="card__info">
-          <div class="title__options">
-            <h2>Work</h2>
-            <button><img src="/images/icon-ellipsis.svg" alt="" /></button>
+      <div class="card__container">
+        <article class="card work__card" id="work">
+          <div class="card__info">
+            <div class="title__options">
+              <h2>Work</h2>
+              <button><img src="/images/icon-ellipsis.svg" alt="" /></button>
+            </div>
+            <div class="hours">
+              <p>32hrs</p>
+              <p class="small">Last Week - 36hrs</p>
+            </div>
           </div>
-          <div class="hours">
-            <p>32hrs</p>
-            <p class="small">Last Week - 36hrs</p>
-          </div>
-        </div>
-      </article>
+        </article>
+      </div>
       <article class="card" id="play">
         <div class="card__illustration play">
           <img src="/images/icon-play.svg" alt="" />

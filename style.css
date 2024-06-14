@@ -24,7 +24,6 @@ body {
   background-color: var(--background-color);
   display: flex;
   justify-content: center;
-  padding: 5rem 1rem;
   font-family: 'Rubik', sans-serif;
 }
 
@@ -32,6 +31,26 @@ h2 {
   color: #fff;
   font-weight: 400;
   font-size: 18px;
+}
+
+.main__content {
+  padding: 5rem 1rem;
+}
+
+.card__container {
+  position: relative;
+  margin-top: 5.3rem;
+
+  .card::before {
+    content: url('/images/icon-work.svg');
+    width: 100%;
+    background-color: var(--soft-red);
+    position: absolute;
+    top: -60px;
+    border-radius: 1rem;
+    text-align: right;
+    z-index: -10;
+  }
 }
 
 .card__header {
@@ -62,7 +81,7 @@ h2 {
 
 .card {
   background-color: var(--info-bgcolor);
-  margin-bottom: 1.5rem;
+  margin-bottom: 4rem;
   border-radius: 1rem;
 
   .card__info {
@@ -73,14 +92,11 @@ h2 {
     display: flex;
     justify-content: right;
     border-radius: 1rem;
-
+    
     &.play {
-    background-color: var(--soft-blue);
+      background-color: var(--soft-blue);
     }
 
-    &.work {
-      background-color: var(--soft-red);
-    }
 
     &.study {
       background-color: var(--light-red);
@@ -141,5 +157,26 @@ h2 {
     cursor: pointer;
     font-size: 18px;
     color: var(--desaturated-blue);
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    min-height: 100vh;
+    align-items: center;
+  }
+  .main__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+
+    .main__card {
+      grid-row: span 2;
+    }
+
+    .card {
+      margin: 0;
+    }
+
   }
 }
