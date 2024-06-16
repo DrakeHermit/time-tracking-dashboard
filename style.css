@@ -12,6 +12,7 @@
   --lime-green: hsl(145, 58%, 55%);
   --violet: hsl(264, 64%, 52%);
   --soft-orange: hsl(43, 84%, 65%);
+  --card-hover: #33397A;
 }
 
 * {
@@ -27,6 +28,10 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
+button {
+  font-family: 'Rubik', sans-serif;
+}
+
 h2 {
   color: #fff;
   font-weight: 400;
@@ -37,48 +42,55 @@ h2 {
   padding: 5rem 1rem;
 }
 
-.card__container {
-  margin-top: 1rem;
 
-  .card__illustration {
-    position: relative;
-    z-index: -1;
-    top: 0.5rem;
-    border-radius: 1rem 1rem 6px 6px;
-    overflow: hidden;
-    height: 3.4rem;
+.card__illustration {
+  position: relative;
+  z-index: -1;
+  top: 0.4rem;
+  border-radius: 1rem 1rem 6px 6px;
+  overflow: hidden;
+  height: 3.8rem;
 
-    img {
-      margin-top: -10px;
-      text-align: right;
-    }
-
+  img {
+    margin-top: -10px;
+    margin-right: 10px;
   }
+}
   
   .social {
     background-color: var(--violet);
+    text-align: right;
   }
 
   .work {
     background-color: var(--soft-red);
+    text-align: right;
   }
 
   .play {
     background-color: var(--soft-blue);
+    text-align: right;
   }
 
   .study {
     background-color: var(--light-red);
+    text-align: right;
   }
 
   .exercise {
     background-color: var(--lime-green);
+    text-align: right;
+
+    img {
+      margin-top: 1px;
+    }
   }
 
   .self-care {
     background-color: var(--soft-orange);
+    text-align: right;
   }
-}
+
 
 
 .card__header {
@@ -110,36 +122,10 @@ h2 {
 .card {
   background-color: var(--info-bgcolor);
   border-radius: 1rem;
+  margin-bottom: 1.5rem;
 
   .card__info {
     padding: 2rem 1.5rem;
-  }
-
-  .card__illustration {
-    display: flex;
-    justify-content: right;
-    border-radius: 1rem;
-    
-    &.play {
-      background-color: var(--soft-blue);
-    }
-
-
-    &.study {
-      background-color: var(--light-red);
-    }
-
-    &.exercise {
-      background-color: var(--lime-green);
-    }
-
-    &.social {
-      background-color: var(--violet);
-    }
-
-    &.self-care {
-      background-color: var(--soft-orange);
-    }
   }
 
   .title__options {
@@ -195,14 +181,27 @@ h2 {
   .main__content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    gap: 2rem;
 
     .main__card {
       grid-row: span 2;
     }
 
+    .hours {
+      display: block;
+
+      p:not(.small) {
+        font-size: 56px;
+        margin-bottom: .2rem;
+      }
+    }
+
     .card {
-      margin: 0;
+      margin-bottom: 0;
+
+       &:not(.main__card):hover {
+        background-color: var(--card-hover);
+      }
     }
     
     .card__header {
@@ -222,6 +221,7 @@ h2 {
 
     .button__group {
       flex-direction: column;
+      margin-top: .5rem;
       gap: 2rem;
       align-items: flex-start;
     }
