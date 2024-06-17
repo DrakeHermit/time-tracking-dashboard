@@ -38,6 +38,11 @@ h2 {
   font-size: 18px;
 }
 
+/* Add active class with JS */
+.active__button {
+  color: #fff !important; 
+}
+
 .main__content {
   padding: 5rem 1rem;
 }
@@ -173,7 +178,51 @@ h2 {
   }
 }
 
-@media (min-width: 768px) {
+@media(min-width: 768px) {
+  .main__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    .main__card {
+      grid-row: span 3;
+      max-height: 450px;
+
+      .button__group {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2.4rem;
+        gap: 2rem;
+      }
+    }
+
+    .card__header {
+      display: flex;
+      padding: 2rem;
+      justify-content: space-between;
+
+      img {
+        margin-bottom: 2rem;
+        width: 85px;
+        height: 85px;
+      }
+
+      p {
+        margin-bottom: 0.2rem;
+      }
+
+      h1 {
+        font-size: 35px;
+      }
+    }
+
+    .card {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 1080px) {
   body {
     min-height: 100vh;
     align-items: center;
@@ -185,6 +234,7 @@ h2 {
 
     .main__card {
       grid-row: span 2;
+      max-height: 98%;
     }
 
     .hours {
@@ -198,6 +248,7 @@ h2 {
 
     .card {
       margin-bottom: 0;
+      max-width: 256px;
 
        &:not(.main__card):hover {
         background-color: var(--card-hover);
@@ -221,8 +272,8 @@ h2 {
 
     .button__group {
       flex-direction: column;
-      margin-top: .5rem;
-      gap: 2rem;
+      margin-top: 0 !important;
+      padding: 2rem;
       align-items: flex-start;
     }
   }
