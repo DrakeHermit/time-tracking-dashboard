@@ -51,13 +51,13 @@ h2 {
 .card__illustration {
   position: relative;
   z-index: -1;
-  top: 0.4rem;
+  top: 1rem;
   border-radius: 1rem 1rem 6px 6px;
   overflow: hidden;
-  height: 3.8rem;
+  height: 4rem;
 
   img {
-    margin-top: -10px;
+    margin-top: -12px;
     margin-right: 10px;
   }
 }
@@ -101,7 +101,7 @@ h2 {
 .card__header {
   display: flex;
   background-color: var(--header-bgcolor);
-  padding: 1.9rem;
+  padding: 2rem;
   align-items: center;
   gap: 1rem;
   border-radius: 1rem;
@@ -124,6 +124,10 @@ h2 {
   }
 }
 
+.main__card {
+  transform: translateY(10px);
+}
+
 .card {
   background-color: var(--info-bgcolor);
   border-radius: 1rem;
@@ -136,7 +140,7 @@ h2 {
   .title__options {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 
     button {
       background-color: inherit;
