@@ -26,14 +26,24 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/desktop-version.png)
+![](./images/mobile-version.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/DrakeHermit/time-tracking-dashboard)
+- Live Site URL: [Live Site](https://drakehermit-time-tracking.netlify.app/)
 
 ## My process
+
+1. Wrote the HTML markup (which got updated along the way)
+2. Wrote the CSS (mobile version)
+3. Wrote the CSS (desktop version)
+4. Started writing JS code 
+  - 1. Wrote the code to highlight daily, weekly, or monthly timeframes
+  - 2. Fetched the JSON data asynchronously
+  - 3. Filtered the data based on which button was clicked
+  - 4. Updated the DOM with the given data
 
 ### Built with
 
@@ -42,14 +52,15 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- JavaScript
 
 ### What I learned
 
-
+I learned a ton working on this challenge, but my main focus with this challenge was to understand how fetching and filtering works, and then how updating the DOM works. I managed to do most of the work myself but of course I had to google how to do stuff without asking what I specifically need to do.
 
 ### Continued development
 
-
+I will keep on working on my frontend dev skills as I go along completing the challenges in the learning paths. But I truly am surprised at myself as to how concepts are starting to click for me. But I am glad that I learned how to retrieve the data from JSON which is basically how an API sends and receives info.
 
 ## Author
 
