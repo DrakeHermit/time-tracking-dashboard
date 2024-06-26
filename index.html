@@ -28,11 +28,28 @@
           </div>
         </header>
         <div class="button__group">
-          <button id="filterButtons" class="active__button" data-filter="daily">
+          <button
+            class="filterButtons"
+            class="active__button"
+            data-filter="daily"
+            aria-label="Daily filter"
+          >
             Daily
           </button>
-          <button id="filterButtons" data-filter="weekly">Weekly</button>
-          <button id="filterButtons" data-filter="monthly">Monthly</button>
+          <button
+            class="filterButtons"
+            data-filter="weekly"
+            aria-label="Weekly filter"
+          >
+            Weekly
+          </button>
+          <button
+            class="filterButtons"
+            data-filter="monthly"
+            aria-label="Monthly filter"
+          >
+            Monthly
+          </button>
         </div>
       </article>
       <div class="card__container">
@@ -43,12 +60,14 @@
           <div class="card__info">
             <div class="title__options">
               <h2>Work</h2>
-              <button><img src="/images/icon-ellipsis.svg" alt="" /></button>
+              <button aria-label="Options">
+                <img src="/images/icon-ellipsis.svg" alt="" />
+              </button>
             </div>
             <div class="hours">
-              <p><span id="currentHours">5</span>hrs</p>
+              <p><span class="currentHours">5</span>hrs</p>
               <p class="small">
-                Last Week - <span id="previousHours">7</span>hrs
+                Last Week - <span class="previousHours">7</span>hrs
               </p>
             </div>
           </div>
@@ -62,7 +81,9 @@
           <div class="card__info">
             <div class="title__options">
               <h2>Play</h2>
-              <button><img src="/images/icon-ellipsis.svg" alt="" /></button>
+              <button aria-label="Options">
+                <img src="/images/icon-ellipsis.svg" alt="" />
+              </button>
             </div>
             <div class="hours">
               <p><span id="currentHours">1</span>hrs</p>
@@ -81,12 +102,14 @@
           <div class="card__info">
             <div class="title__options">
               <h2>Study</h2>
-              <button><img src="/images/icon-ellipsis.svg" alt="" /></button>
+              <button aria-label="Options">
+                <img src="/images/icon-ellipsis.svg" alt="" />
+              </button>
             </div>
             <div class="hours">
-              <p><span id="currentHours">0</span>hrs</p>
+              <p><span class="currentHours">0</span>hrs</p>
               <p class="small">
-                Last Week - <span id="previousHours">1</span>hrs
+                Last Week - <span class="previousHours">1</span>hrs
               </p>
             </div>
           </div>
@@ -100,12 +123,14 @@
           <div class="card__info">
             <div class="title__options">
               <h2>Exercise</h2>
-              <button><img src="/images/icon-ellipsis.svg" alt="" /></button>
+              <button aria-label="Options">
+                <img src="/images/icon-ellipsis.svg" alt="" />
+              </button>
             </div>
             <div class="hours">
-              <p><span id="currentHours">1</span>hrs</p>
+              <p><span class="currentHours">1</span>hrs</p>
               <p class="small">
-                Last Week - <span id="previousHours">1</span>hrs
+                Last Week - <span class="previousHours">1</span>hrs
               </p>
             </div>
           </div>
@@ -119,12 +144,14 @@
           <div class="card__info">
             <div class="title__options">
               <h2>Social</h2>
-              <button><img src="/images/icon-ellipsis.svg" alt="" /></button>
+              <button aria-label="Options">
+                <img src="/images/icon-ellipsis.svg" alt="" />
+              </button>
             </div>
             <div class="hours">
-              <p><span id="currentHours">1</span>hrs</p>
+              <p><span class="currentHours">1</span>hrs</p>
               <p class="small">
-                Last Week - <span id="previousHours">3</span>hrs
+                Last Week - <span class="previousHours">3</span>hrs
               </p>
             </div>
           </div>
@@ -138,12 +165,14 @@
           <div class="card__info">
             <div class="title__options">
               <h2>Self Care</h2>
-              <button><img src="/images/icon-ellipsis.svg" alt="" /></button>
+              <button aria-label="Options">
+                <img src="/images/icon-ellipsis.svg" alt="" />
+              </button>
             </div>
             <div class="hours">
-              <p><span id="currentHours">0</span>hrs</p>
+              <p><span class="currentHours">0</span>hrs</p>
               <p class="small">
-                Last Week - <span id="previousHours">1</span>hrs
+                Last Week - <span class="previousHours">1</span>hrs
               </p>
             </div>
           </div>

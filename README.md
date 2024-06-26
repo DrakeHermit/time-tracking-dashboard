@@ -40,10 +40,10 @@ Users should be able to:
 2. Wrote the CSS (mobile version)
 3. Wrote the CSS (desktop version)
 4. Started writing JS code 
-  - 1. Wrote the code to highlight daily, weekly, or monthly timeframes
-  - 2. Fetched the JSON data asynchronously
-  - 3. Filtered the data based on which button was clicked
-  - 4. Updated the DOM with the given data
+    1. Wrote the code to highlight daily, weekly, or monthly timeframes
+    2. Fetched the JSON data asynchronously
+    3. Filtered the data based on which button was clicked
+    4. Updated the DOM with the given data
 
 ### Built with
 

@@ -1,6 +1,6 @@
-const buttons = document.querySelectorAll("#filterButtons");
-const currentHoursSpent = document.querySelectorAll("#currentHours");
-const previousHoursSpent = document.querySelectorAll("#previousHours");
+const buttons = document.querySelectorAll(".filterButtons");
+const currentHoursSpent = document.querySelectorAll(".currentHours");
+const previousHoursSpent = document.querySelectorAll(".previousHours");
 
 const fetchData = async () => {
   try {
